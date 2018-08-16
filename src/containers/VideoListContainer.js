@@ -22,7 +22,7 @@ const mapDispatchToProps = dispatch => {
   };
 };
   
-export default connect(mapStateToProps, mapDispatchToProps)(VideoListContainer);
+export default connect(mapStateToProps, mapDispatchToProps)(VideoList);
 
 
 // var VideoListContainer = () => (
