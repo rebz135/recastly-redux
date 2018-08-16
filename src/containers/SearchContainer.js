@@ -13,8 +13,8 @@ var SearchContainer = () => (
 var mapDispatchToProps = dispatch => {
   console.log(dispatch);
   return {
-    handleSearchInputChange: () => 
-      dispatch(handleSearchChange())
+    handleSearchInputChange: (q) => 
+      dispatch(handleSearchChange(q))
   };
 };
 
