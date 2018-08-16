@@ -1,8 +1,12 @@
 import { combineReducers } from 'redux';
-import currentVideo from './currentVideo.js';
-import videoList from './videoList.js';
+import currentVideoReducer from './currentVideo.js';
+import videoListReducer from './videoList.js';
 
-var rootReducer = () => {};
+var rootReducer = combineReducers({
+  'currentVideo': currentVideoReducer, 
+  'videoList': videoListReducer
+});
+
 
 //TODO: define the root reducer for this app
 
@@ -11,3 +15,14 @@ var rootReducer = () => {};
 //  listed above.
 
 export default rootReducer;
+
+
+// var videoListReducer = (state = {'videoList': []}, action) => {
+//   //TODO: define a reducer for the videoList field of our state.
+//   switch (action.type) {
+//     case 'CHANGE_VIDEO_LIST':
+//       return state.videoList.concat(action.videos);
+//     default:
+//       return state.videoList;
+//   }
+// };
