@@ -18,7 +18,7 @@ var mapDispatchToProps = dispatch => {
   };
 };
 
-export default connect(mapDispatchToProps)(SearchContainer);
+export default connect(null, mapDispatchToProps)(SearchContainer);
 
 
 
